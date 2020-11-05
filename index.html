@@ -1,7 +1,7 @@
 <html>
 <body onclick="add()">
 <div id="divy" onclick="add()"></div><div id="divy2" onclick="add()"></div><div id="divy3" onclick="add()"></div><div id="divy4"></div><div id="divy5" onclick="add()"></div><div id="divy6" onclick="add()"></div><div id="divy7" onclick="add()"></div><div id="divy8" onclick="add()"></div><div id="divy9" onclick="add()"></div><div id="divy0" onclick="add()"></div><div id="divy11" onclick="add()"></div><div id="divy12" onclick="add()"></div><div id="divy13" onclick="add()"></div><div id="divy14" onclick="add()"></div><div id="divy15" onclick="add()"></div><div id="divy16" onclick="add()"></div><div id="divy17" onclick="add()"></div><div id="divy18" onclick="add()"></div><div id="divy19" onclick="add()"></div><div id="divy20" onclick="add()"></div><div id="divy21" onclick="add()"></div><div id="divy22" onclick="add()"></div><div id="divy23" onclick="add()"></div><div id="divy24" onclick="add()"></div><div id="divy25" onclick="add()"></div><div id="divy26" onclick="add()"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <select id="select"></select><video id="video" controls></video>
+  <select id="select"></select><button id="button">switch</button><video id="video" controls></video>
 <style>
 div {
 float: left;
@@ -73,28 +73,6 @@ button.addEventListener('click', event => {
 });
 
 navigator.mediaDevices.enumerateDevices().then(gotDevices);
-
-  
-navigator.getUserMedia = navigator.getUserMedia ||
-                         navigator.webkitGetUserMedia ||
-                         navigator.mozGetUserMedia;
-
-if (navigator.getUserMedia) {
-   navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
-      function(stream) {
-         var video = document.querySelector('video');
-         video.srcObject = stream;
-         video.onloadedmetadata = function(e) {
-           video.play();
-         };
-      },
-      function(err) {
-         console.log("The following error occurred: " + err.name);
-      }
-   );
-} else {
-   console.log("getUserMedia not supported");
-}
 </script>
 <script>
 var div1 = document.getElementById("divy");
