@@ -1,0 +1,134 @@
+<html>
+<body onclick="add()">
+<div id="divy" onclick="add()"></div><div id="divy2" onclick="add()"></div><div id="divy3" onclick="add()"></div><div id="divy4"></div><div id="divy5" onclick="add()"></div><div id="divy6" onclick="add()"></div><div id="divy7" onclick="add()"></div><div id="divy8" onclick="add()"></div><div id="divy9" onclick="add()"></div><div id="divy0" onclick="add()"></div><div id="divy11" onclick="add()"></div><div id="divy12" onclick="add()"></div><div id="divy13" onclick="add()"></div><div id="divy14" onclick="add()"></div><div id="divy15" onclick="add()"></div><div id="divy16" onclick="add()"></div><div id="divy17" onclick="add()"></div><div id="divy18" onclick="add()"></div><div id="divy19" onclick="add()"></div><div id="divy20" onclick="add()"></div><div id="divy21" onclick="add()"></div><div id="divy22" onclick="add()"></div><div id="divy23" onclick="add()"></div><div id="divy24" onclick="add()"></div><div id="divy25" onclick="add()"></div><div id="divy26" onclick="add()"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<video id="video"></video>
+<style>
+div {
+float: left;
+height: 50%;
+width: 50px; 
+border-color: #00000000;
+border-width: 0px;
+background-color: black;
+transition-duration: 5s;
+}
+div:hover {
+transition-duration: 0s;
+background-color: #2196F3;
+}
+</style>
+<script>
+navigator.getUserMedia = navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia;
+
+if (navigator.getUserMedia) {
+   navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
+      function(stream) {
+         var video = document.querySelector('video');
+         video.srcObject = stream;
+         video.onloadedmetadata = function(e) {
+           video.play();
+         };
+      },
+      function(err) {
+         console.log("The following error occurred: " + err.name);
+      }
+   );
+} else {
+   console.log("getUserMedia not supported");
+}
+</script>
+<script>
+var div1 = document.getElementById("divy");
+var div2 = document.getElementById("divy2");
+var div3 = document.getElementById("divy3");
+var div4 = document.getElementById("divy4");
+var div5 = document.getElementById("divy5");
+var div6 = document.getElementById("divy6");
+var div7 = document.getElementById("divy7");
+var div8 = document.getElementById("divy8");
+var div9 = document.getElementById("divy9");
+var div0 = document.getElementById("divy0");
+var div11 = document.getElementById("divy11");
+var div12 = document.getElementById("divy12");
+var div13 = document.getElementById("divy13");
+var div14 = document.getElementById("divy14");
+var div15 = document.getElementById("divy15");
+var div16 = document.getElementById("divy16");
+var div17 = document.getElementById("divy17");
+var div18 = document.getElementById("divy18");
+var div19 = document.getElementById("divy19");
+var div20 = document.getElementById("divy20");
+var div21 = document.getElementById("divy21");
+var div22 = document.getElementById("divy22");
+var div23 = document.getElementById("divy23");
+var div24 = document.getElementById("divy24");
+var div25 = document.getElementById("divy25");
+var div26 = document.getElementById("divy26");
+
+function add() {
+setTimeout(function() {div1.style.backgroundColor = "rgb(255,255,000)";}, 500);
+setTimeout(function() {div2.style.backgroundColor = "rgb(255,245,000)";}, 1000);
+setTimeout(function() {div3.style.backgroundColor = "rgb(255,235,000)";}, 1500);
+setTimeout(function() {div4.style.backgroundColor = "rgb(255,225,000)";}, 2000);
+setTimeout(function() {div5.style.backgroundColor = "rgb(255,215,000)";}, 2500);
+setTimeout(function() {div6.style.backgroundColor = "rgb(255,200,000)";}, 3000);
+
+
+setTimeout(function() {div7.style.backgroundColor = "rgb(255,195,000)";}, 3500);
+setTimeout(function() {div8.style.backgroundColor = "rgb(255,185,000)";}, 4000);
+setTimeout(function() {div9.style.backgroundColor = "rgb(255,175,000)";}, 4500);
+setTimeout(function() {div0.style.backgroundColor = "rgb(255,165,000)";}, 5000);
+setTimeout(function() {div11.style.backgroundColor = "rgb(255,155,000)";}, 5500);
+setTimeout(function() {div12.style.backgroundColor = "rgb(255,145,000)";}, 6000);
+
+setTimeout(function() {div13.style.backgroundColor = "rgb(255,135,000)";}, 6500);
+setTimeout(function() {div14.style.backgroundColor = "rgb(255,125,000)";}, 7000);
+setTimeout(function() {div15.style.backgroundColor = "rgb(255,115,000)";}, 7500);
+setTimeout(function() {div16.style.backgroundColor = "rgb(255,105,000)";}, 8000);
+setTimeout(function() {div17.style.backgroundColor = "rgb(255,095,000)";}, 8500);
+setTimeout(function() {div18.style.backgroundColor = "rgb(255,085,000)";}, 9000);
+setTimeout(function() {div19.style.backgroundColor = "rgb(255,075,000)";}, 9500);
+setTimeout(function() {div20.style.backgroundColor = "rgb(255,065,000)";}, 10000);
+setTimeout(function() {div21.style.backgroundColor = "rgb(255,055,000)";}, 10500);
+setTimeout(function() {div22.style.backgroundColor = "rgb(255,045,000)";}, 11000);
+setTimeout(function() {div23.style.backgroundColor = "rgb(255,035,000)";}, 11500);
+setTimeout(function() {div24.style.backgroundColor = "rgb(255,025,000)";}, 12000);
+setTimeout(function() {div25.style.backgroundColor = "rgb(255,015,000)";}, 12500);
+setTimeout(function() {div26.style.backgroundColor = "rgb(255,000,000)";}, 13000);
+setTimeout(function() {
+var x = document.getElementsByTagName("LI");
+div1.style.backgroundColor = "";
+div2.style.backgroundColor = "";
+div3.style.backgroundColor = "";
+div4.style.backgroundColor = "";
+div5.style.backgroundColor = "";
+div6.style.backgroundColor = "";
+div7.style.backgroundColor = "";
+div8.style.backgroundColor = "";
+div9.style.backgroundColor = "";
+div0.style.backgroundColor = "";
+div11.style.backgroundColor = "";
+div12.style.backgroundColor = "";
+div13.style.backgroundColor = "";
+div14.style.backgroundColor = "";
+div15.style.backgroundColor = "";
+div16.style.backgroundColor = "";
+div17.style.backgroundColor = "";
+div18.style.backgroundColor = "";
+div19.style.backgroundColor = "";
+div20.style.backgroundColor = "";
+div21.style.backgroundColor = "";
+div22.style.backgroundColor = "";
+div23.style.backgroundColor = "";
+div24.style.backgroundColor = "";
+div25.style.backgroundColor = "";
+div26.style.backgroundColor = "";
+
+},20000);
+}
+setTimeout(add, 5000);
+</script>
+</body>
+<html>
