@@ -30,7 +30,7 @@
   <pre id="log"></pre>
 </div>
 <style>
-div {
+div[onclick="add()"] {
 float: left;
 height: 50%;
 width: 50px; 
@@ -39,7 +39,7 @@ border-width: 0px;
 background-color: black;
 transition-duration: 5s;
 }
-div:hover {
+div[onclick="add()"]:hover {
 transition-duration: 0s;
 background-color: #2196F3;
 }
